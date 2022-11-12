@@ -1,4 +1,4 @@
-﻿namespace Frontend
+﻿namespace Conectando
 {
     partial class AltaAlumno
     {

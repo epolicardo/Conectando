@@ -14,7 +14,7 @@ using System.Data.SqlClient;
 using static System.ComponentModel.Design.ObjectSelectorEditor;
 using System.Net;
 
-namespace Frontend
+namespace Conectando
 {
     public partial class AltaAlumno : Form
     {

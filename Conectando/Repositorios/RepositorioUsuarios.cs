@@ -21,7 +21,7 @@ namespace Conectando.Repositorios
         public Usuario LoginUsuario(string email)
         {
             dbContext = new DataContext();
-            return dbContext.Usuarios.FirstOrDefault(x => x.Email == email);
+            return dbContext.Usuarios.FirstOrDefault(x => x.nombreLogin == email);
         }
 
         public bool AltaUsuario()

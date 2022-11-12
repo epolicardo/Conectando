@@ -1,4 +1,4 @@
-﻿using Frontend;
+﻿using Conectando;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -44,6 +44,31 @@ namespace Conectando
         {
             AltaAlumno menu = new AltaAlumno();
             menu.Show();
+        }
+
+        private void docentebtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void asistenciabtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void calificacionesbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inscripcionbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reportesbtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Frontend
+namespace Conectando
 {
     public partial class PersonaABM : Form
     {

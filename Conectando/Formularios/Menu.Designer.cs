@@ -55,7 +55,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(67, 23);
+            this.label1.Location = new System.Drawing.Point(72, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(367, 39);
             this.label1.TabIndex = 0;
@@ -74,7 +74,6 @@
             // alumnobtn
             // 
             this.alumnobtn.BackColor = System.Drawing.Color.White;
-            this.alumnobtn.BackgroundImage = global::Frontend.Properties.Resources.alumnos;
             this.alumnobtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.alumnobtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.alumnobtn.FlatAppearance.BorderSize = 0;
@@ -82,6 +81,7 @@
             this.alumnobtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.alumnobtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.alumnobtn.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.alumnobtn.Image = global::Conectando.Properties.Resources.alumnos;
             this.alumnobtn.Location = new System.Drawing.Point(33, 119);
             this.alumnobtn.Name = "alumnobtn";
             this.alumnobtn.Size = new System.Drawing.Size(129, 89);
@@ -92,44 +92,47 @@
             // calificacionesbtn
             // 
             this.calificacionesbtn.BackColor = System.Drawing.Color.White;
-            this.calificacionesbtn.BackgroundImage = global::Frontend.Properties.Resources.notas;
             this.calificacionesbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.calificacionesbtn.FlatAppearance.BorderSize = 0;
             this.calificacionesbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.calificacionesbtn.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.calificacionesbtn.Image = global::Conectando.Properties.Resources.notas;
             this.calificacionesbtn.Location = new System.Drawing.Point(45, 265);
             this.calificacionesbtn.Name = "calificacionesbtn";
             this.calificacionesbtn.Size = new System.Drawing.Size(117, 89);
             this.calificacionesbtn.TabIndex = 3;
             this.calificacionesbtn.UseVisualStyleBackColor = false;
+            this.calificacionesbtn.Click += new System.EventHandler(this.calificacionesbtn_Click);
             // 
             // docentebtn
             // 
             this.docentebtn.BackColor = System.Drawing.Color.White;
-            this.docentebtn.BackgroundImage = global::Frontend.Properties.Resources.docentes;
             this.docentebtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.docentebtn.FlatAppearance.BorderSize = 0;
             this.docentebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.docentebtn.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.docentebtn.Image = global::Conectando.Properties.Resources.docentes;
             this.docentebtn.Location = new System.Drawing.Point(196, 128);
             this.docentebtn.Name = "docentebtn";
             this.docentebtn.Size = new System.Drawing.Size(114, 80);
             this.docentebtn.TabIndex = 4;
             this.docentebtn.UseVisualStyleBackColor = false;
+            this.docentebtn.Click += new System.EventHandler(this.docentebtn_Click);
             // 
             // inscripcionbtn
             // 
             this.inscripcionbtn.BackColor = System.Drawing.Color.White;
-            this.inscripcionbtn.BackgroundImage = global::Frontend.Properties.Resources.preinscr;
             this.inscripcionbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.inscripcionbtn.FlatAppearance.BorderSize = 0;
             this.inscripcionbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.inscripcionbtn.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.inscripcionbtn.Image = global::Conectando.Properties.Resources.preinscr;
             this.inscripcionbtn.Location = new System.Drawing.Point(206, 265);
             this.inscripcionbtn.Name = "inscripcionbtn";
             this.inscripcionbtn.Size = new System.Drawing.Size(104, 91);
             this.inscripcionbtn.TabIndex = 5;
             this.inscripcionbtn.UseVisualStyleBackColor = false;
+            this.inscripcionbtn.Click += new System.EventHandler(this.inscripcionbtn_Click);
             // 
             // asistenciabtn
             // 
@@ -144,26 +147,27 @@
             this.asistenciabtn.Size = new System.Drawing.Size(91, 100);
             this.asistenciabtn.TabIndex = 6;
             this.asistenciabtn.UseVisualStyleBackColor = false;
+            this.asistenciabtn.Click += new System.EventHandler(this.asistenciabtn_Click);
             // 
             // reportesbtn
             // 
             this.reportesbtn.BackColor = System.Drawing.Color.White;
-            this.reportesbtn.BackgroundImage = global::Frontend.Properties.Resources.reporte;
             this.reportesbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.reportesbtn.FlatAppearance.BorderSize = 0;
             this.reportesbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.reportesbtn.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.reportesbtn.Image = global::Conectando.Properties.Resources.reporte;
             this.reportesbtn.Location = new System.Drawing.Point(343, 265);
             this.reportesbtn.Name = "reportesbtn";
             this.reportesbtn.Size = new System.Drawing.Size(105, 89);
             this.reportesbtn.TabIndex = 7;
             this.reportesbtn.Text = " ";
             this.reportesbtn.UseVisualStyleBackColor = false;
+            this.reportesbtn.Click += new System.EventHandler(this.reportesbtn_Click);
             // 
             // salirbtn
             // 
             this.salirbtn.BackColor = System.Drawing.Color.White;
-            this.salirbtn.BackgroundImage = global::Frontend.Properties.Resources.salir;
             this.salirbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.salirbtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.salirbtn.FlatAppearance.BorderSize = 0;
@@ -281,7 +285,6 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::Frontend.Properties.Resources.check;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.Cursor = System.Windows.Forms.Cursors.No;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -299,6 +302,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(600, 443);
             this.Controls.Add(this.button1);

@@ -2,7 +2,7 @@ using System.Data.SqlClient;
 using System.Configuration;
 using Backend;
 using Backend.Modelos;
-using Frontend.Resources;
+using Conectando.Resources;
 using Microsoft.EntityFrameworkCore;
 using Conectando.Data;
 using Conectando.Repositorios;
@@ -11,7 +11,7 @@ namespace Conectando
 {
     public partial class Form1 : Form
     {
-       
+
         public Form1()
         {
             InitializeComponent();
@@ -23,8 +23,16 @@ namespace Conectando
 
             RepositorioUsuarios repositorio = new RepositorioUsuarios();
 
-            repositorio.LoginUsuario(usuariotxt.Text);
-           
+            Usuario user = repositorio.LoginUsuario(usuariotxt.Text);
+            if (user != null && user.TipoUsuario == "Administrador")
+            {
+                frmMenu menu = new frmMenu(user.Nombre);
+                menu.Show(this);
+            }
+            else
+            {
+                MessageBox.Show("Usuario o contrase?a incorrectos");
+            }
 
 
         }
@@ -51,9 +59,6 @@ namespace Conectando
                 WindowState = FormWindowState.Minimized;
 
         }
-
-
-
 
     }
 }

@@ -44,7 +44,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(195, 142);
+            this.label1.Location = new System.Drawing.Point(141, 76);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(301, 20);
             this.label1.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(195, 192);
+            this.label2.Location = new System.Drawing.Point(194, 146);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 20);
             this.label2.TabIndex = 1;
@@ -62,14 +62,14 @@
             // 
             // usuariotxt
             // 
-            this.usuariotxt.Location = new System.Drawing.Point(194, 215);
+            this.usuariotxt.Location = new System.Drawing.Point(194, 169);
             this.usuariotxt.Name = "usuariotxt";
             this.usuariotxt.Size = new System.Drawing.Size(212, 23);
             this.usuariotxt.TabIndex = 2;
             // 
             // txtclave
             // 
-            this.txtclave.Location = new System.Drawing.Point(194, 291);
+            this.txtclave.Location = new System.Drawing.Point(194, 234);
             this.txtclave.Name = "txtclave";
             this.txtclave.Size = new System.Drawing.Size(212, 23);
             this.txtclave.TabIndex = 3;
@@ -85,7 +85,7 @@
             this.btningresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btningresar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btningresar.ForeColor = System.Drawing.Color.Black;
-            this.btningresar.Location = new System.Drawing.Point(194, 339);
+            this.btningresar.Location = new System.Drawing.Point(194, 277);
             this.btningresar.Name = "btningresar";
             this.btningresar.Size = new System.Drawing.Size(212, 29);
             this.btningresar.TabIndex = 4;
@@ -97,7 +97,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(195, 268);
+            this.label3.Location = new System.Drawing.Point(194, 211);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(156, 20);
             this.label3.TabIndex = 5;
@@ -106,10 +106,11 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(368, 38);
+            this.pictureBox1.Image = global::Conectando.Properties.Resources.FondoLogin;
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.Size = new System.Drawing.Size(584, 545);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
@@ -121,9 +122,10 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(455, 0);
+            this.button1.Image = global::Conectando.Properties.Resources.X_Cerrar;
+            this.button1.Location = new System.Drawing.Point(500, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 33);
+            this.button1.Size = new System.Drawing.Size(57, 55);
             this.button1.TabIndex = 8;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -135,9 +137,9 @@
             this.btnMin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
             this.btnMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gainsboro;
             this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMin.Location = new System.Drawing.Point(412, 1);
+            this.btnMin.Location = new System.Drawing.Point(434, 12);
             this.btnMin.Name = "btnMin";
-            this.btnMin.Size = new System.Drawing.Size(47, 31);
+            this.btnMin.Size = new System.Drawing.Size(40, 31);
             this.btnMin.TabIndex = 9;
             this.btnMin.UseVisualStyleBackColor = true;
             this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
@@ -150,13 +152,13 @@
             this.ClientSize = new System.Drawing.Size(583, 544);
             this.Controls.Add(this.btnMin);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btningresar);
             this.Controls.Add(this.txtclave);
             this.Controls.Add(this.usuariotxt);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
